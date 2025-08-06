@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+var list = document.querySelector('ul')
+list.addEventListener('click', function(ev){
+    if(ev.target.tagName === 'LI'){
+        ev.target.classList.toggle('checked');
+    }
+}, false);
+
+
+
 function mewElement(){
     let li = document.createElement("li")
     let inputValue = document.getElementById("getInput").value;
@@ -12,8 +29,8 @@ function mewElement(){
 
     document.getElementById("getInput").value;
 
-    // let span = document.createElement("SPAN")
-    // let txt = document.createTextNode("\u00D7");
+    let span = document.createElement("SPAN")
+    let txt = document.createTextNode("\u00D7");
 
     span.className = "close"
     span.appendChild(txt)
